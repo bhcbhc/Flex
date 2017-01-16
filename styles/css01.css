@@ -1,0 +1,88 @@
+.flex {
+  float: left;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 20%;
+  background: #d385b5;
+  width: 80px;
+  height: 80px;
+  margin: 2rem;
+  padding: 4px;
+}
+.pip {
+  border-radius: 44%;
+  background: black;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.second-face {
+  justify-content: space-between;
+}
+.point-one-main-mid {
+  justify-content: center;
+}
+.point-one-main-end {
+  justify-content: flex-end;
+}
+.point-one-cross-mid {
+  align-items: center;
+}
+.point-one-cross-main-cross-mid {
+  align-items: center;
+  justify-content: center;
+}
+.third-face {
+  justify-content: space-between;
+}
+.point-two-cross {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.point-two-cross-center {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.point-two-45deg span:nth-child(2) {
+  align-self: center;
+}
+.point-two-45deg-max {
+  justify-content: space-between;
+}
+.point-two-45deg-max span:nth-child(2) {
+  align-self: flex-end;
+}
+.point-four-wrap {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+.point-four-top-bottom {
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.point-four-top-bottom .top,
+.point-four-top-bottom .bottom {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.point-five {
+  flex-wrap: wrap;
+}
+.point-five .top {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+.point-five .mid {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+}
+.point-five .bottom {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+}

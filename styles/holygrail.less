@@ -1,0 +1,52 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: #d8e1ff;
+  display: flex;
+  min-height: 100vh;
+  _height: 100vh;
+  flex-direction: column;
+}
+
+header, footer {
+  flex: 1;
+  background: darkgray;
+  text-align: center;
+  min-height: 0em;
+}
+
+.HolyGrail-body {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  min-height: 20rem;
+}
+
+.HolyGrail-content {
+  flex: 1;
+}
+
+.HolyGrail-nav {
+  flex: 0 0 12em;
+  background: lightblue;
+  order: -1;
+}
+
+.HolyGrail-aside {
+  flex: 0 0 12em;
+  background: lightcoral;
+}
+
+@media (max-width: 768px) {
+  .HolyGrail-body {
+    flex-direction: column;
+    flex: 1;
+    .HolyGrail-nav, .HolyGrail-content.HolyGrail-aside {
+      flex: auto;
+    }
+  }
+}

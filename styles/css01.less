@@ -1,0 +1,104 @@
+@blue: #d385b5;
+@side: left;
+
+.flex {
+  float: left;
+  display: flex;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 20%;
+  background: @blue;
+  width: 80px;
+  height: 80px;
+  margin: 2rem;
+  padding: 4px;
+}
+
+.pip {
+  border-radius: 44%;
+  background: black;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.second-face {
+  justify-content: space-between;
+}
+
+.point-one-main-mid {
+  justify-content: center;
+}
+
+.point-one-main-end {
+  justify-content: flex-end;
+}
+
+.point-one-cross-mid {
+  align-items: center;
+}
+
+.point-one-cross-main-cross-mid {
+  align-items: center;
+  justify-content: center;
+}
+
+.third-face {
+  justify-content: space-between;
+}
+
+.point-two-cross {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.point-two-cross-center {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.point-two-45deg span:nth-child(2) {
+  align-self: center;
+}
+
+.point-two-45deg-max {
+  justify-content: space-between;
+  span:nth-child(2) {
+    align-self: flex-end;
+  }
+}
+
+.point-four-wrap {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+
+.point-four-top-bottom {
+  flex-wrap: wrap;
+  align-content: space-between;
+  .top, .bottom {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.point-five {
+  flex-wrap: wrap;
+  .top {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+  .mid {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .bottom{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+}
